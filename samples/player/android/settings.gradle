@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://artifactory-blr.netcodev.com/artifactory/libs-release"
+            credentials {
+                username repoUsername
+                password repoPassword
+            }
+        }
+    }
+}
+rootProject.name = "OnRewind Sample"
+include ':app'
