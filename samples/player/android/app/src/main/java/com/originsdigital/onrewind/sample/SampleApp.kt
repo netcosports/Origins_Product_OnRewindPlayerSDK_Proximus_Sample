@@ -11,7 +11,7 @@ class SampleApp : Application() {
         OnRewind.initialize(
             OnRewind.InitParams.Builder()
                 .setApplicationContext(this)
-                .setBaseUrl("https://api-gateway.onrewind.tv/main-api/")
+                .setBaseUrl("https://api-gateway.onrewind.tv/")
                 .build()
         )
     }

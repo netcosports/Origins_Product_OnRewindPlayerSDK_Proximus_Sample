@@ -160,7 +160,8 @@ class PlayerActivity : AppCompatActivity() {
         val config = PlayerParameters.Builder()
             //Pass wrapper here
 //            .setWrapper(ExoPlayerWrapper(this))
-            .setEventConfigurationUrl("https://storage.googleapis.com/static-production.netcosports.com/onrewind/hbs_demo_player_config.json")
+//            .setEventConfigurationUrl("https://storage.googleapis.com/static-production.netcosports.com/onrewind/hbs_demo_player_config.json")
+            .setGameId("958085")
             .setAccountKey("B1oYoKWDK")
             .setIsChromecastEnabled(false)
             .build()
